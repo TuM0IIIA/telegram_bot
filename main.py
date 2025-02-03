@@ -23,8 +23,9 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(error_msg)
 
 if __name__ == "__main__":
-    app = Application.builder().token(TOKEN).build()
+    #app = Application.builder().token(TOKEN).build()
     # app.add_handler(CommandHandler("start", start))
     # app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     # app.add_error_handler(error_handler)
-    app.run_polling()
+    #app.run_polling()
+    print('GO')
